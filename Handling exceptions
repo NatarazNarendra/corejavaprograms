@@ -1,0 +1,12 @@
+JVM executes code inside the try block.
+If an exception occurs, remaining try code is skipped and JVM searches for a matching catch block.
+If found, the catch block executes.
+Control then moves to the finally block (if present).
+If no matching catch is found, the exception is handled by JVM’s default handler.
+The finally block always executes, whether an exception occurs or not.
+throws: The throws keyword is used in a method declaration to indicate that the method may throw one or more exceptions.
+Java provides try, catch, finally, throw, and throws keywords for handling exceptions.
+Infrastructure as Code (IaC) tool used to build, modify, and manage infrastructure safely and efficiently.
+Automates infrastructure provisioning instead of manual console configuration.
+Enables version control, collaboration, and repeatable deployments.
+Reduces human errors while improving scalability and consistency.
