@@ -1,0 +1,18 @@
+What is the difference between map() and flatMap()?”
+
+map() transforms one element → one element, while flatMap() transforms one element → multiple elements and flattens the result.
+
+CompletableFuture is used to perform asynchronous and non-blocking tasks efficiently. Introduced in Java 8,
+it allows tasks to run in separate threads and provides powerful methods to manage, combine, and process results of 
+asynchronous computations.
+
+Part of the java.util.concurrent package and implements Future and CompletionStage.
+Supports chaining multiple asynchronous tasks using methods like thenApply() and thenAccept().
+Helps improve application performance by executing tasks concurrently without blocking the main thread.
+Creating a CompletableFuture
+CompletableFuture can be created using the supplyAsync() method, which runs a task asynchronously in a separate thread and 
+returns the result later.
+
+supplyAsync() is a static method of the CompletableFuture class.
+It accepts a Supplier functional interface as an argument.
+Supplier takes no input and returns a value.
