@@ -1,0 +1,27 @@
+@GetMapping("/users")
+public List<User> getUsers() {
+
+    return userService.getUsers()
+            .stream()
+            .filter(distinctByKey(User::getId))
+            .collect(Collectors.toList());
+}
+GET     → Read       → Idempotent
+PUT     → Replace    → Idempotent
+DELETE  → Delete     → Idempotent
+POST    → Create     → Non-idempotent
+PATCH   → Partial    → Depends
+200 → Success
+201 → Created
+204 → Success, no body
+
+400 → Bad request
+401 → Authentication problem
+403 → Authorization problem
+404 → Not found
+409 → Conflict
+
+500 → Server error
+502 → Bad gateway
+503 → Service unavailable
+504 → Gateway timeout
