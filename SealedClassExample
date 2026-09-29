@@ -1,0 +1,7 @@
+public class SealedClassExample {
+
+    public static void main(String[] args) {
+        Number number = new IntegerNumber();
+        System.out.println(number.sum(10, 20));
+    }
+}
